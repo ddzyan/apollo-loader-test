@@ -2,11 +2,11 @@
 
 class AppBootHook {
   constructor(app) {
-    app.messenger.once('configClient', config => {
-      console.log('configClient :', config);
-      Object.assign(app.config, config);
-      console.log('configClient :', config);
-    });
+    // app.messenger.once('configClient', config => {
+    //   console.log('configClient :', config);
+    //   Object.assign(app.config, config);
+    //   console.log('configClient :', config);
+    // });
     this.app = app;
   }
 
@@ -29,6 +29,8 @@ class AppBootHook {
 
   async willReady() {
     // All plugins have started, can do some thing before app ready
+    const config = await this.app.configClient.getConfig();
+    console.log(config);
     console.log('willReady config :', this.app.configTest);
   }
 
