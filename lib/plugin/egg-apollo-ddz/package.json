@@ -3,10 +3,7 @@
   "version": "1.0.6",
   "description": "egg apollo 插件",
   "eggPlugin": {
-    "name": "apolloDdz",
-    "dependencies": [
-      "schedule"
-    ]
+    "name": "apolloDdz"
   },
   "keywords": [
     "egg",
