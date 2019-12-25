@@ -2,6 +2,11 @@
 
 class AppBootHook {
   constructor(app) {
+    app.messenger.once('configClient', config => {
+      console.log('configClient :', config);
+      Object.assign(app.config, config);
+      console.log('configClient :', config);
+    });
     this.app = app;
   }
 
@@ -19,19 +24,23 @@ class AppBootHook {
 
   async didLoad() {
     // All files have loaded, start plugin here.
+    console.log('didLoad config :', this.app.configTest);
   }
 
   async willReady() {
     // All plugins have started, can do some thing before app ready
+    console.log('willReady config :', this.app.configTest);
   }
 
   async didReady() {
     // Worker is ready, can do some things
     // don't need to block the app boot.
+    console.log('didReady config :', this.app.configTest);
   }
 
   async serverDidReady() {
     // Server is listening.
+    console.log('serverDidReady config :', this.app.configTest);
   }
 
   async beforeClose() {
