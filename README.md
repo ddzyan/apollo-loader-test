@@ -16,3 +16,8 @@
 现有问题;
 1. 项目启动直接报错：Cannot find module './apollo-config.json'
 2. agent.js 中的生命周期函数，无法在 config 加载之前运行
+
+
+### 更新内容
+1. 添加 egg-sequelize 插件
+2. 添加关于异步获取数据库配置，实例化 egg-sequelize 插件，modal的数据插入单元测试，用来验证是否异步动态配置config成功

@@ -5,5 +5,10 @@ const path = require('path');
 exports.apolloDdz = {
   enable: true,
   path: path.join(__dirname, '../lib/plugin/egg-apollo-ddz'),
-  // package: 'egg-apollo-ddz',
+};
+
+
+exports.sequelize = {
+  enable: true,
+  package: 'egg-sequelize',
 };

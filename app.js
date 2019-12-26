@@ -29,9 +29,9 @@ class AppBootHook {
 
   async willReady() {
     // All plugins have started, can do some thing before app ready
-    const config = await this.app.configClient.getConfig();
+    /*  const config = await this.app.configClient.getConfig();
     console.log(config);
-    console.log('willReady config :', this.app.configTest);
+    console.log('willReady config :', this.app.configTest); */
   }
 
   async didReady() {

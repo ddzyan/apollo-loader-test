@@ -1,5 +1,17 @@
 {
-  "configTest": {
-    "name": "apollo"
+  "sequelize": {
+    "database": "type_orm",
+    "username": "root",
+    "password": "123456",
+    "dialect": "mysql",
+    "host": "127.0.0.1",
+    "port": "3306",
+    "define": {
+      "timestamps": false,
+      "deletedAt": false,
+      "freezeTableName": true
+    },
+    "timezone": "+08:00",
+    "logging": false
   }
 }
