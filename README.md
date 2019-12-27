@@ -1,5 +1,7 @@
 ## 简介
 
+已经确认 egg 不支持在项目启动后，插件实例化前，异步动态获取配置。如果遇到此类需求，请参考我的 [apollo插件](https://github.com/ddzyan/egg-apollo-ddz) 实现方法：
+
 本测试demo预计实现的内容为：
 1. 异步获取动态配置信息，并且添加到 egg 的 config 对象中
 2. 必须可以在 egg-sequlize 等插件之前添加，使数据库连接配置可以动态配置
